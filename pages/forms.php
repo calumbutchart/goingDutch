@@ -6,18 +6,23 @@
 
 	<div id="form_join">
 
-		<h1>Find Your Table</h1>
+		<img src="images/godutchapp.png" class="logo"/>
 
-		<input type="text" placeholder="enter the name being shared">
-
+		<h2>Enter Your Bill Code:</h2>
+		<input type="text" placeholder=""/>		
 		<button type="submit" id="home_submit">GO DUTCH!</button>
 		
 	</div>
 
 	<div id="form_add">
+
+		<img src="images/godutchapp.png" class="logo"/>
+
+		<h1>Your Bill Code is:</h1>
+		<div class="billcode">F4EX2BH</div>
 		
-		<input type="text" placeholder="enter a name to share">
-		<input type="text" placeholder="£ THE BILL"/>
+		<h2>Your Total Bill Amount</h2>
+		<span class="pound">£</span><input type="text" placeholder=""/>
 
 		<button type="submit" id="home_submit">GO DUTCH!</button>
 

@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "C:\\wamp\\www\\projects\\iow"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	]
+}

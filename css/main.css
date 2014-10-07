@@ -72,11 +72,24 @@
 .flag.flag-za {
   background-position: -32px -33px;
 }
+@font-face {
+  font-family: 'godutch';
+  src: url('fonts/clarendon_std_bold.eot');
+  src: url('fonts/clarendon_std_bold.eot?#iefix') format('embedded-opentype'), url('fonts/clarendon_std_bold.svg#BebasNeueRegular') format('svg'), url('fonts/clarendon_std_bold.woff') format('woff'), url('fonts/clarendon_std_bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .button {
   border: none;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   color: #fff;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 0 20px;
+  margin: 20px;
+  background: #ea5a07;
 }
 body {
   width: 100%;
@@ -84,6 +97,14 @@ body {
   position: absolute;
   padding: 0;
   margin: 0;
+  font-family: 'godutch';
+  color: #fff;
+}
+body h1 {
+  font-size: 26px;
+}
+body h2 {
+  font-size: 16px;
 }
 body #main_wrapper {
   position: absolute;
@@ -91,13 +112,14 @@ body #main_wrapper {
   width: 100%;
   overflow: hidden;
   border: 1px solid green;
-  background: rgba(100, 0, 0, 0.5);
+  background: #3e0d10;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
 body #main_wrapper .page {
+  text-align: center;
   width: 100%;
   height: 100%;
   display: block;
@@ -125,16 +147,106 @@ body #main_wrapper .page.previous {
 body #main_wrapper .page.current {
   left: 0;
 }
-body #main_wrapper #home {
-  text-align: center;
-  background: #FF4700;
-  padding: 10%;
+body #main_wrapper .page_footer {
+  position: fixed;
+  bottom: 0;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=0);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000',endColorstr='#00000000',GradientType=0);
+  width: 100%;
+  height: 65px;
+  padding-top: 15px;
+  box-sizing: border-box;
 }
-body #main_wrapper #home button {
+body #main_wrapper #home .buttons button {
   border: none;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   color: #fff;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 0 20px;
+  margin: 20px;
+  background: #ea5a07;
+}
+body #main_wrapper #home .buttons #start {
+  background: #ee7401;
+}
+body #main_wrapper #home .buttons #join {
+  background: #ea5a07;
+}
+body #main_wrapper #home img {
+  display: block;
+  margin: auto;
+}
+body #main_wrapper #home #logo {
+  margin-top: 100px;
+  width: 50%;
+}
+body #main_wrapper #home #clog {
+  margin-bottom: 30px;
+  width: 50%;
+}
+body #main_wrapper #home #info {
+  width: 30px;
+}
+body #main_wrapper #forms .logo {
+  width: 50%;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+body #main_wrapper #forms h1 {
+  margin-bottom: 0;
+}
+body #main_wrapper #forms .billcode {
+  color: #ea5a07;
+  font-size: 50px;
+}
+body #main_wrapper #forms #form_add,
+body #main_wrapper #forms #form_join {
+  background: #3e0d10;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+body #main_wrapper #forms #form_add button,
+body #main_wrapper #forms #form_join button {
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 0 20px;
+  margin: 20px;
+  background: #ea5a07;
+}
+body #main_wrapper #forms #form_add input[type="text"],
+body #main_wrapper #forms #form_join input[type="text"] {
+  width: 100%;
+  display: block;
+  margin-bottom: 40px;
+  line-height: 30px;
+  height: 30px;
+}
+body #main_wrapper #forms #form_add input[type="text"],
+body #main_wrapper #forms #form_join input[type="text"] {
+  background: #140405;
+  border: none;
+  display: inline-block;
+  width: 175px;
+  margin-left: 10px;
 }
 body #main_wrapper #grid table {
   width: 100%;
@@ -174,7 +286,7 @@ body #main_wrapper #grid table td label input.selected + div {
   background: pink;
 }
 body #main_wrapper #tip {
-  background: #f9b232;
+  background: #3e0d10;
 }
 body #main_wrapper #tip #tip_slider {
   position: absolute;
@@ -182,12 +294,20 @@ body #main_wrapper #tip #tip_slider {
   width: 100%;
   left: 0;
   bottom: 0;
-  background: #3e0d11;
+  background: #ea5a07;
 }
 body #main_wrapper #tip #tip_slider #percent {
   color: #fff;
   font-size: 70px;
   position: absolute;
   right: 0;
-  top: -35px;
+  top: -10px;
+}
+body #main_wrapper #bill {
+  color: #fff;
+  padding: 30px;
+}
+body #main_wrapper #bill .yourbill {
+  font-size: 80px;
+  margin-top: 100px;
 }

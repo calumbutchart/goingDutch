@@ -1,12 +1,31 @@
 @import 'elements.less';
 
+@brown: #3e0d10;
+@orange: #ea5a07;
+@light_orange: #ee7401;
+
+@font-face {
+    font-family: 'godutch';
+    src: url('fonts/clarendon_std_bold.eot');
+    src: url('fonts/clarendon_std_bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/clarendon_std_bold.svg#BebasNeueRegular') format('svg'),
+         url('fonts/clarendon_std_bold.woff') format('woff'),
+         url('fonts/clarendon_std_bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .button{
 	border:none;
 	.rounded(10px);
 	color: #fff;
+	font-family: inherit;
+	font-size: 20px;
+	line-height: 40px;
+	padding: 0 20px;
+	margin: 20px;
+	background: @orange;
 }
-
-
 
 
 body{
@@ -15,6 +34,16 @@ body{
 	position: absolute;
 	padding: 0;
 	margin: 0;
+    font-family: 'godutch';
+    color: #fff;
+
+    h1{
+    	font-size: 26px;
+    }
+
+    h2{
+    	font-size: 16px;
+    }
 
 	#main_wrapper{
 
@@ -23,10 +52,11 @@ body{
 		width: 100%;
 		overflow: hidden;
 		border: 1px solid green;
-		background: rgba(100,0,0,0.5);
+		background: @brown;
 		.border-box();
 
 		.page{
+			text-align: center;
 			width: 100%;
 			height:100%;
 			display: block;
@@ -46,9 +76,21 @@ body{
 
 		}
 
+		.page_footer{
+			position: fixed;
+			bottom: 0;
+			.linear-gradient( top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+			width: 100%;
+			height: 65px;
+			padding-top: 15px;
+			box-sizing: border-box;
+		}
+
 		@import 'home.less';
+		@import 'forms.less';
 		@import 'grid.less';
 		@import 'tip.less';
+		@import 'bill.less';
 
 	}
 

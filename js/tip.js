@@ -24,7 +24,7 @@ define(['jquery', 'jqueryui'], function($){
 				var yPos = parseInt( 100 - (event.pageY * 100 / pageHeight) );
 				//update the tip_slider
 				$tipSlider.css('height', yPos + '%');
-				$percent.text( (yPos * pMax / 100) + '%');
+				$percent.text( 'Tip ' + parseInt(yPos * pMax / 100) + '%');
 
 			})
 

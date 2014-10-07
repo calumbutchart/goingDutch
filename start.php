@@ -89,9 +89,9 @@
 // Start a new Database Object
 /////////////////////////////////////////////////////////////
 
-    $g_dbh = db::connect( $db_dsn, $db_username, $db_password );
-    $g_dbh->setAttribute( PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true );
-    $g_dbh->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+    // $g_dbh = db::connect( $db_dsn, $db_username, $db_password );
+    // $g_dbh->setAttribute( PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true );
+    // $g_dbh->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 
 
 

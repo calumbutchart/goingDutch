@@ -111,7 +111,6 @@ body #main_wrapper {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  border: 1px solid green;
   background: #3e0d10;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

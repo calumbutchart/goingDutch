@@ -2,25 +2,25 @@
 
 require_once('start.php');
 
-include('/templates/header.php');
+include('templates/header.php');
 
 //include pages in here
 $page_status = 'current';
-include('/pages/home.php');
+include('pages/home.php');
 
 $page_status = 'next';
-include('/pages/forms.php');
+include('pages/forms.php');
 
 $page_status = 'next';
-include('/pages/grid.php');
+include('pages/grid.php');
 
 $page_status = 'next';
-include('/pages/tip.php');
+include('pages/tip.php');
 
 $page_status = 'next';
-include('/pages/bill.php');
+include('pages/bill.php');
 ?>
 
 <?php
 
-include('/templates/footer.php');
+include('templates/footer.php');

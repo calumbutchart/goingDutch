@@ -164,11 +164,20 @@ body #main_wrapper #grid table td label div {
   width: 100%;
   height: 100%;
 }
+body #main_wrapper #grid table td label div.user1 {
+  background: green;
+}
+body #main_wrapper #grid table td label div.user2 {
+  background: purple;
+}
+body #main_wrapper #grid table td label div.user3 {
+  background: yellow;
+}
+body #main_wrapper #grid table td label div.user4 {
+  background: red;
+}
 body #main_wrapper #grid table td label input {
   display: none;
-}
-body #main_wrapper #grid table td label input:checked + div {
-  background: red;
 }
 body #main_wrapper #grid table td label input.selected + div {
   background: pink;

@@ -24,6 +24,8 @@ define(['jquery', 'jqueryui'], function($){
     var pos1x, pos1y;
     var pos2x, pos2y;
     var add = true;
+    var user = 'user1',
+        userList = ['user2', 'user3', 'user4'];
 
     $('.square:not(.taken)').on( 'mousedown', function(){
 
@@ -57,6 +59,13 @@ define(['jquery', 'jqueryui'], function($){
         });
     })
 
+    $("body").keydown(function(e) {
+        if (e.keyCode == 32) { // spacebar
+            userList.push(user);
+            user = userList.shift();  
+        }
+    });
+
     updateSelected = function(){
         //need to iterate through all squares within this range
         // console.log(pos1x + ' ' + pos1y + ' ' + pos2x + ' ' + pos2y);
@@ -82,8 +91,8 @@ define(['jquery', 'jqueryui'], function($){
     updateSelectedFinal = function(){
         console.log(pos1x + ' ' + pos1y + ' ' + pos2x + ' ' + pos2y);
         //need to iterate through all squares within this range
-        $gridTable.find('.selected').removeClass('selected').prop('checked', true);
-        $gridTable.find('.deselected').removeClass('deselected').prop('checked', false);
+        $gridTable.find('.selected').removeClass('selected').prop('checked', true).next().removeAttr('class').addClass(user);
+        $gridTable.find('.deselected').removeClass('deselected').prop('checked', false).next().removeAttr('class').removeClass(user);;
     }
 
     updateSquare = function($square){

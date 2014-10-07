@@ -18,6 +18,7 @@ require.config({
 
 require(['jquery']), function(){};
 require(['jqueryui']), function(){};
+require(['home']), function(){};
 require(['grid']), function(){};
 require(['page']), function(){};
 require(['tip']), function(){};

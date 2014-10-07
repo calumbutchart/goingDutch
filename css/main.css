@@ -72,6 +72,12 @@
 .flag.flag-za {
   background-position: -32px -33px;
 }
+.button {
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  color: #fff;
+}
 body {
   width: 100%;
   height: 100%;
@@ -124,12 +130,11 @@ body #main_wrapper #home {
   background: #FF4700;
   padding: 10%;
 }
-body #main_wrapper #home input[type="text"] {
-  width: 100%;
-  display: block;
-  margin-bottom: 40px;
-  line-height: 30px;
-  height: 30px;
+body #main_wrapper #home button {
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  color: #fff;
 }
 body #main_wrapper #grid table {
   width: 100%;

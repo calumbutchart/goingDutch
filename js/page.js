@@ -13,11 +13,6 @@ define(['jquery', 'jqueryui'], function($){
 
 		console.log('init happened');
 
-		$('#home_submit').on('click', function(){
-			PAGES.showNextPage();
-			console.log('clicked');
-		})
-
 		$("body").keydown(function(e) {
 		  if(e.keyCode == 39) { // left
 		  	PAGES.showNextPage();
